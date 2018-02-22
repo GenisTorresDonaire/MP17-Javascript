@@ -3,33 +3,76 @@
   <head>
     <meta charset="UTF-8">
     <title>Add Movie - Simple Star Wars Site</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.css">
   </head>
 
   <body>
-    <section>
-      <h1>Add Movie</h1>
-      <h2>Attribution information</h2>
-      <form>
-        <label for="title">Title</label>
-        <input id="title" type="text" name="title" value="">
-        <label for="opening-crawl">Opening Crawl</label>
-        <textarea id="opening-crawl" name="opening-crawl" rows="8" cols="40"></textarea>
-        <label for="directors">Director(s)</label>
-        <textarea id="directors" name="directors" rows="8" cols="40"></textarea>
-        <p>One director per line.</p>
-        <label for="producers">Producer(s)</label>
-        <textarea id="producers" name="producers" rows="8" cols="40"></textarea>
-        <p>One producer per line.</p>
-        <label for="writers">Writer(s)</label>
-        <textarea id="writers" name="writers" rows="8" cols="40"></textarea>
-        <p>One writer per line.</p>
-        <label for="starring">Starring</label>
-        <textarea id="starring" name="starring" rows="8" cols="40"></textarea>
-        <p>One actress/actor per line.</p>
-        <label for="music-by">Music by</label>
-        <input id="music-by" type="text" name="music-by" value="">
-        <input type="submit" name="submit" value="Add movie">
-      </form>
-    </section>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">STAHWARS</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Starwars movies</a></li>
+          <li><a href="add-movie/index.html">Add movie</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          
+          <section>
+            <h1>Add Movie</h1>
+            <h2>Attribution information</h2>
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input class="form-control" id="title" type="text" name="title" value="">
+              </div>
+
+              <div class="form-group">
+                <label for="opening-crawl">Opening Crawl</label>
+                <textarea class="form-control" id="opening-crawl" name="opening-crawl" rows="8" cols="40"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="directors">Director(s)</label>
+                <textarea class="form-control" id="directors" name="directors" rows="8" cols="40"></textarea>
+                <p class="help-block">One director per line.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="producers">Producer(s)</label>
+                <textarea class="form-control" id="producers" name="producers" rows="8" cols="40"></textarea>
+                <p class="help-block">One producer per line.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="writers">Writer(s)</label>
+                <textarea class="form-control" id="writers" name="writers" rows="8" cols="40"></textarea>
+                <p class="help-block">One writer per line.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="starring">Starring</label>
+                <textarea class="form-control" id="starring" name="starring" rows="8" cols="40"></textarea>
+                <p class="help-block">One actress/actor per line.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="music-by">Music by</label>
+                <input id="music-by" type="text" name="music-by" value="">
+              </div>
+              <input class="btn btn-danger" type="submit" name="submit" value="Add movie">
+            </form>
+          </section>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
